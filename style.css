@@ -1,6 +1,6 @@
-@font-face{font-family:"Poppins";font-weight:400;font-style:normal;font-display:swap;src:url(assets/fonts/poppins-latin-400-normal.woff2) format("woff2")}
-@font-face{font-family:"Poppins";font-weight:600;font-style:normal;font-display:swap;src:url(assets/fonts/poppins-latin-600-normal.woff2) format("woff2")}
-@font-face{font-family:"Poppins";font-weight:700;font-style:normal;font-display:swap;src:url(assets/fonts/poppins-latin-700-normal.woff2) format("woff2")}
+@font-face{font-family:"Poppins";font-weight:400;font-style:normal;font-display:swap;src:url(poppins-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:"Poppins";font-weight:600;font-style:normal;font-display:swap;src:url(poppins-latin-600-normal.woff2) format("woff2")}
+@font-face{font-family:"Poppins";font-weight:700;font-style:normal;font-display:swap;src:url(poppins-latin-700-normal.woff2) format("woff2")}
 :root{--bg:#15202b;--panel:#1e2732;--line:#38444d;--text:#f7f9f9;--muted:#8b98a5;--accent:#5eead4;--on-accent:#0d1524;--header-bg:rgba(21,32,43,.9);--card:rgba(21,32,43,.6);--glow:rgba(94,234,212,.16);--hover:rgba(94,234,212,.08);--serif:"Poppins",system-ui,-apple-system,"Segoe UI",sans-serif;--sans:"Poppins",system-ui,-apple-system,"Segoe UI",sans-serif}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:4.5rem}
