@@ -11,3 +11,9 @@ Site statique (HTML, CSS, JS), sans dépendance externe.
 ## Mettre à jour
 - Modifie `index.html` (textes) ; remplace `CV-Frenet-Alonmadon.pdf` pour changer le CV téléchargeable.
 - Domaine personnalisé : Settings > Pages > Custom domain.
+
+## Activer le formulaire de contact (Formspree)
+1. Crée un compte gratuit sur formspree.io, puis « New form » : indique ton e-mail (il reste caché dans le site).
+2. Formspree te donne une adresse du type `https://formspree.io/f/abcd1234`.
+3. Dans `index.html`, remplace `https://formspree.io/f/VOTRE_ID` par cette adresse (une seule occurrence : `data-endpoint`).
+4. Envoie `index.html` sur GitHub (Add file > Upload files > Commit). Le premier message de test doit être confirmé par e-mail depuis Formspree.
