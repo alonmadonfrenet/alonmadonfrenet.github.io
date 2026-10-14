@@ -55,4 +55,13 @@ if(fm){var fmsg=doc.getElementById("form-msg"),fbtn=fm.querySelector("button[typ
       .catch(function(){show("err")})
       .then(function(){fbtn.disabled=false});
   });}
+var mb=doc.getElementById("menu-btn"),mn=doc.getElementById("menu"),io1=doc.getElementById("ico-open"),io2=doc.getElementById("ico-close");
+function toggleMenu(o){mn.classList.toggle("open",o);mb.setAttribute("aria-expanded",String(o));io1.classList.toggle("hidden",o);io2.classList.toggle("hidden",!o)}
+if(mb&&mn){
+  mb.addEventListener("click",function(){toggleMenu(!mn.classList.contains("open"))});
+  mn.querySelectorAll("nav a").forEach(function(a){a.addEventListener("click",function(){toggleMenu(false)})});
+  doc.addEventListener("keydown",function(e){if(e.key==="Escape"&&mn.classList.contains("open")){toggleMenu(false);mb.focus()}});
+  doc.addEventListener("click",function(e){if(mn.classList.contains("open")&&!e.target.closest("header"))toggleMenu(false)});
+  if(window.matchMedia){matchMedia("(min-width:768px)").addEventListener("change",function(e){if(e.matches)toggleMenu(false)})}
+}
 })();

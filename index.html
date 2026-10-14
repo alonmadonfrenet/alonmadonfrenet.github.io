@@ -17,14 +17,15 @@
 </head>
 <body class="min-h-screen">
 <a class="skip" href="#contenu">Aller au contenu</a>
-<header class="top sticky top-0 z-50 flex flex-wrap items-center justify-between gap-x-6 gap-y-2 px-4 sm:px-8 py-3 border-b border-line bg-[var(--header-bg)] backdrop-blur">
+<header class="top sticky top-0 z-50 flex flex-wrap items-center justify-between gap-x-6 px-4 sm:px-8 py-3 border-b border-line bg-[var(--header-bg)] backdrop-blur">
   <a class="font-bold tracking-tight" href="#accueil" aria-label="Accueil">Frenet Alonmadon</a>
-  <nav class="order-3 w-full overflow-x-auto whitespace-nowrap flex gap-5 text-sm text-muted sm:order-none sm:w-auto" aria-label="Navigation principale">
-    <a class="hover:text-ink [&.on]:text-ink" href="#apropos">À propos</a><a class="hover:text-ink [&.on]:text-ink" href="#competences">Compétences</a><a class="hover:text-ink [&.on]:text-ink" href="#parcours">Parcours</a><a class="hover:text-ink [&.on]:text-ink" href="#projets">Projets</a><a class="hover:text-ink [&.on]:text-ink" href="#contact">Contact</a>
-  </nav>
-  <div class="flex items-center gap-4">
-    <div class="lang" role="group" aria-label="Langue"><button type="button" data-lang="fr">FR</button><button type="button" data-lang="en">EN</button></div>
-    <div class="themes" role="group" aria-label="Thème"><button type="button" data-theme-set="light"></button><button type="button" data-theme-set="dim"></button><button type="button" data-theme-set="night"></button></div>
+  <button id="menu-btn" type="button" class="grid place-items-center w-10 h-10 rounded-lg border border-line md:hidden" aria-label="Menu" aria-expanded="false" aria-controls="menu">
+    <svg id="ico-open" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    <svg id="ico-close" class="w-5 h-5 hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+  <div id="menu" class="flex w-full flex-col gap-4 mt-2 pt-3 pb-2 border-t border-line max-h-[calc(100svh-5rem)] overflow-y-auto md:mt-0 md:p-0 md:border-0 md:w-auto md:flex-row md:items-center md:gap-8 md:max-h-none md:overflow-visible">
+    <nav class="flex flex-col text-base text-muted md:flex-row md:gap-5 md:text-sm" aria-label="Navigation principale"><a class="block py-2.5 border-b border-line hover:text-ink [&.on]:text-ink md:py-0 md:border-0" href="#apropos">À propos</a><a class="block py-2.5 border-b border-line hover:text-ink [&.on]:text-ink md:py-0 md:border-0" href="#competences">Compétences</a><a class="block py-2.5 border-b border-line hover:text-ink [&.on]:text-ink md:py-0 md:border-0" href="#parcours">Parcours</a><a class="block py-2.5 border-b border-line hover:text-ink [&.on]:text-ink md:py-0 md:border-0" href="#projets">Projets</a><a class="block py-2.5 border-b border-line hover:text-ink [&.on]:text-ink md:py-0 md:border-0" href="#contact">Contact</a></nav>
+    <div class="flex items-center justify-between gap-4 md:justify-start"><div class="lang" role="group" aria-label="Langue"><button type="button" data-lang="fr">FR</button><button type="button" data-lang="en">EN</button></div><div class="themes" role="group" aria-label="Thème"><button type="button" data-theme-set="light"></button><button type="button" data-theme-set="dim"></button><button type="button" data-theme-set="night"></button></div></div>
   </div>
 </header>
 
